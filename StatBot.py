@@ -6,7 +6,7 @@ from discord.ext import commands
 import platform
 
 # Here you can modify the bot's prefix and description and wether it sends help in direct messages or not.
-client = Bot(description="Basic Bot by Habchy#1665", command_prefix="PUT YOUR PREFIX HERE", pm_help = False)
+client = Bot(description="StatBot v1.0", command_prefix="/", pm_help = False)
 
 # This is what happens everytime the bot launches. In this case, it prints information like server count, user count the bot is connected to, and the bot id in the console.
 # Do not mess with it because the bot can break, if you wish to do so, please consult me or someone trusted.
@@ -19,10 +19,6 @@ async def on_ready():
 	print('Use this link to invite {}:'.format(client.user.name))
 	print('https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
 	print('--------')
-	print('Support Discord Server: https://discord.gg/FNNNgqb')
-	print('Github Link: https://github.com/Habchy/BasicBot')
-	print('--------')
-	print('Created by Habchy#1665')
 
 # This is a basic example of a call and response command. You tell it do "this" and it does it.
 @client.command()
@@ -30,10 +26,10 @@ async def ping(*args):
 
 	await client.say(":ping_pong: Pong!")
 	await asyncio.sleep(3)
-	await client.say(":warning: This bot was created by **Habchy#1665**, it seems that you have not modified it yet. Go edit the file and try it out!")
+	#await client.say(":warning: This bot was created by **Habchy#1665**, it seems that you have not modified it yet. Go edit the file and try it out!")
 # After you have modified the code, feel free to delete the line above (line 33) so it does not keep popping up everytime you initiate the ping commmand.
 	
-client.run('PUT YOUR BOT TOKEN HERE')
+client.run('MzgzOTg3MzYyMjkzNzQzNjE2.DPsRWA.lb9AooNRqRjOhzUr4qVgXgOJWrY')
 
 
 
