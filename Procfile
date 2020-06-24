@@ -1,1 +1,1 @@
-worker: python3.6.3 StatBot.py
+worker: node index.js
